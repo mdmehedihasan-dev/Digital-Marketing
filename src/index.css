@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animation for the text from bottom to top */
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(50px); /* Start from 50px below */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* End at its natural position */
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to elements when triggered */
+.animate-from-bottom {
+  animation: slideFromBottom 0.8s ease-out;
+}
+
+
